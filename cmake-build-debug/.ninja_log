@@ -1,0 +1,5 @@
+# ninja log v7
+1	85	1790968363154242086	build.ninja	e2535d00149401a7
+1	85	1790968363154242086	/Users/nanvex/Desktop/programmin/Конфиг/1 практическая/cmd emulator/cmake-build-debug/cmake_install.cmake	e2535d00149401a7
+0	417	1790968363161302626	CMakeFiles/vfs_emulator.dir/src/main.cpp.o	49e58a5ddce0ed05
+419	462	1790968363580360028	vfs_emulator	49cba2c8479b20b9

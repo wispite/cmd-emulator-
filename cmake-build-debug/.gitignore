@@ -1,0 +1,32 @@
+# Build
+build/
+bin/
+obj/
+Debug/
+Release/
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.dylib
+*.a
+*.lib
+
+# IDE
+.vs/
+.vscode/
+../.idea/
+.DS_Store
+
+# CMake generated files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+compile_commands.json
+
+# Temporary files
+*.tmp
+*.log
+*.swp
+*.swo
