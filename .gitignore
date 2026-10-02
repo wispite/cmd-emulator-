@@ -1,0 +1,46 @@
+# билды
+build/
+bin/
+obj/
+Debug/
+Release/
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.dylib
+*.a
+*.lib
+
+## артефакты сборки
+vfs-emulator
+*.o
+build/
+cmake-build-*/
+
+# macOS
+.DS_Store
+
+# IDE
+.vs/
+.vscode/
+../.idea/
+.DS_Store
+.idea/
+EOF
+
+# CMake сгенерированные файлы
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+compile_commands.json
+cmake-build-debug/
+main.dSYM/
+*.dSYM/
+
+# временные файлы
+*.tmp
+*.log
+*.swp
+*.swo
