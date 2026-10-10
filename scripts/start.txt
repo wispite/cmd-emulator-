@@ -1,0 +1,5 @@
+conf-dump
+ls
+unknown-command
+cd "folder with spaces"
+ls "another folder with spaces"7
