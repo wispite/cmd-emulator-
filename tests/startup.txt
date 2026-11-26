@@ -1,0 +1,14 @@
+conf-dump
+pwd
+ls
+cd docs
+pwd
+ls
+cd ..
+pwd
+cd nonexistent
+ls extra
+pwd extra
+unknown
+cd /
+ls

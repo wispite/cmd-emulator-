@@ -22,14 +22,14 @@ vector<string> parser(const string& input) {
     size_t quoteContentStart = 0;
 
     for (char c : input) {
-        //открытие или закрытие кавычек
+
         if (c == '"') {
             if (!quoted) {
                 quoted = true;
                 tokenStarted = true;
                 quoteContentStart = current.size();
             } else {
-                //проверяем, не состоят ли кавычки только из пробелов
+
                 bool onlySpaces = all_of(
                     current.begin() + quoteContentStart,
                     current.end(),
@@ -43,7 +43,6 @@ vector<string> parser(const string& input) {
             }
         }
 
-        //  пробел вне кавычек завершает аргумент
         else if (isspace(static_cast<unsigned char>(c)) && !quoted) {
             if (tokenStarted) {
                 tokens.push_back(current);
@@ -51,7 +50,7 @@ vector<string> parser(const string& input) {
                 tokenStarted = false;
             }
         }
-        //обычный символ или пробел внутри кавычек
+
         else {
             current += c;
             tokenStarted = true;
@@ -87,7 +86,6 @@ void confDump(const Config& config) {
     cout << '\n';
 }
 
-// Returns false when the command is "exit"; errors are reported to the caller.
 bool executeCommand(const string& input, const Config& config) {
     vector<string> tokens = parser(input);
     if (tokens.empty()) return true;
@@ -122,13 +120,11 @@ bool runScript(const Config& config) {
         ++lineNumber;
         if (line.find_first_not_of(" \t\r") == string::npos) continue;
 
-        // Show the scripted input as if the user typed it into the REPL.
         cout << config.prompt << line << '\n';
         try {
             if (!executeCommand(line, config)) return true;
         } catch (const exception& e) {
             cerr << "err (script line " << lineNumber << "): " << e.what() << '\n';
-            // Requirement for variant 2: skip the bad line and continue.
         }
     }
     return true;
