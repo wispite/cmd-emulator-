@@ -38,6 +38,7 @@ compile_commands.json
 cmake-build-debug/
 main.dSYM/
 *.dSYM/
+CMakeLists.txt
 
 # временные файлы
 *.tmp
