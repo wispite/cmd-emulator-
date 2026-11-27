@@ -13,7 +13,8 @@ run: all
 	./$(TARGET)
 
 test:
-	@echo "Automated tests are not implemented yet."
+	./scripts/test_touch.sh
+	./scripts/test_startup.sh
 
 clean:
 	rm -f $(TARGET)

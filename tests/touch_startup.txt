@@ -1,0 +1,15 @@
+pwd
+ls
+touch new.txt
+ls
+wc new.txt
+touch new.txt
+wc new.txt
+touch docs/new.txt
+cd docs
+ls
+cd ..
+touch missing/file.txt
+touch docs
+touch
+touch new.txt extra
